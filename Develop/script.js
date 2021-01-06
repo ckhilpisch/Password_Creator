@@ -46,6 +46,11 @@ if (passCombo === "") {
 }
 console.log(passCombo);
 
+for (var i=0; i <passLength; i++) {
+  password += passCombo.charAt (Math.floor(Math.random()*passCombo.length))
+}
+
+console.log(password);
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
