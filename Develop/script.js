@@ -12,7 +12,7 @@ var passLength = ''
 
 //ask user for a length between 8 and 128 and store the variable
 while (passLength < 8 || passLength > 128 || isNaN(passLength)) {
-  passLength = prompt ("Please select a number between 8 -128, my friend");
+  passLength = prompt ("Please select a number between 8 -128, my friend!");
 
 }
 alert("You chose " + passLength + " for your password length");
@@ -41,6 +41,9 @@ if (specCharInput==true){
   passCombo += specChar;
 }
 
+if (passCombo === "") {
+  alert("Tsk, tsk, you must chose atleast one character set!  Let's start at the beginning");
+}
 console.log(passCombo);
 
 // Write password to the #password input
