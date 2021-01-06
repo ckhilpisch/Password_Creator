@@ -8,46 +8,53 @@ var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "0123456789";
 var specChar = "~!@#$%^&*+|\/";
 //create an empty string to hold the password length
-var passLength = ''
+var passLength = "";
+var password = "";
 
-//ask user for a length between 8 and 128 and store the variable
-while (passLength < 8 || passLength > 128 || isNaN(passLength)) {
-  passLength = prompt ("Please select a number between 8 -128, my friend!");
+function generatePassword(){
+//ask user for a length between 8 and 128 that is a number and store the variable
+  while (passLength < 8 || passLength > 128 || isNaN(passLength)) {
+    passLength = prompt ("Please select a number between 8 -128, my friend!");
 
-}
-alert("You chose " + passLength + " for your password length");
+  }
+  alert("You chose " + passLength + " for your password length");
+//ask user which character sets they'd like to use.
 
-upperCaseInput = confirm("Do you wish to use uppercase characters?")
-if (upperCaseInput==true){
-  alert("alright, alright, alright")
-  passCombo += upperCase;
-}
+// while (upperCaseInput !== true && lowerCaseInput !== true && numbersInput !== true && specCharInput !== true ) 
+  upperCaseInput = confirm("Do you wish to use uppercase characters?")
+  if (upperCaseInput==true){
+    alert("alright, alright, alright")
+    passCombo += upperCase;
+  }
 
-lowerCaseInput = confirm("Do you wish to use lowercase characters?")
-if (lowerCaseInput==true){
-  alert("tight, tight, tight")
-  passCombo += lowerCase;  
-}
+  lowerCaseInput = confirm("Do you wish to use lowercase characters?")
+  if (lowerCaseInput==true){
+    alert("tight, tight, tight")
+    passCombo += lowerCase;  
+  }
 
-numbersInput = confirm("Do you wish to use numerical characters?")
-if (numbersInput==true){
-  alert("dope,dope,dope")
-  passCombo += numbers;
-}
+  numbersInput = confirm("Do you wish to use numerical characters?")
+  if (numbersInput==true){
+    alert("dope,dope,dope")
+    passCombo += numbers;
+  }
 
-specCharInput = confirm("Do you wish to use some of those special characters?")
-if (specCharInput==true){
-  alert("cool, cool, cool")
-  passCombo += specChar;
-}
-
-if (passCombo === "") {
-  alert("Tsk, tsk, you must chose atleast one character set!  Let's start at the beginning");
-}
-console.log(passCombo);
-
-for (var i=0; i <passLength; i++) {
-  password += passCombo.charAt (Math.floor(Math.random()*passCombo.length))
+  specCharInput = confirm("Do you wish to use some of those special characters?")
+  if (specCharInput==true){
+    alert("cool, cool, cool")
+    passCombo += specChar;
+  }
+//validation to make sure the user choses atleast one character set
+  if (passCombo === "") {
+    alert("Tsk, tsk, you must chose atleast one character set!  Let's start at the beginning");
+  }
+  // while (upperCaseInput !== true && lowerCaseInput !== true && numbersInput !== true && specCharInput !== true ) 
+  // console.log(passCombo);
+//help generate a random password, the desired length, with the character sets chosen
+  for (var i=0; i <passLength; i++) {
+    password += passCombo.charAt (Math.floor(Math.random()*passCombo.length))
+  }
+  return password;
 }
 
 console.log(password);
@@ -55,6 +62,7 @@ console.log(password);
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  
 
   passwordText.value = password;
 
@@ -62,3 +70,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
