@@ -17,13 +17,31 @@ while (passLength < 8 || passLength > 128 || isNaN(passLength)) {
 }
 alert("You chose " + passLength + " for your password length");
 
+upperCaseInput = confirm("Do you wish to use uppercase characters?")
+if (upperCaseInput==true){
+  alert("alright, alright, alright")
+  passCombo += upperCase;
+}
 
+lowerCaseInput = confirm("Do you wish to use lowercase characters?")
+if (lowerCaseInput==true){
+  alert("tight, tight, tight")
+  passCombo += lowerCase;  
+}
 
+numbersInput = confirm("Do you wish to use numerical characters?")
+if (numbersInput==true){
+  alert("dope,dope,dope")
+  passCombo += numbers;
+}
 
+specCharInput = confirm("Do you wish to use some of those special characters?")
+if (specCharInput==true){
+  alert("cool, cool, cool")
+  passCombo += specChar;
+}
 
-
-
-
+console.log(passCombo);
 
 // Write password to the #password input
 function writePassword() {
