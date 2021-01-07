@@ -1,5 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
+var resetBtn = document.querySelector("#reset");
 //declare an empty string to push all of the possible string combos to
 var passCombo = "";
 //create strings for the four variable types
@@ -70,6 +72,12 @@ function writePassword() {
 
 }
 
+function resetPage() {
+  location.reload();
+} 
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+resetBtn.addEventListener("click",resetPage );
 
