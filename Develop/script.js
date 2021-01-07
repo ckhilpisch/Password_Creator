@@ -8,10 +8,12 @@ var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "0123456789";
 var specChar = "~!@#$%^&*+|\/";
 //create an empty string to hold the password length
-var passLength = "";
-var password = "";
+// var passLength = "";
+// var password = "";
 
 function generatePassword(){
+  var passLength = "";
+  var password = "";
 //ask user for a length between 8 and 128 that is a number and store the variable
   while (passLength < 8 || passLength > 128 || isNaN(passLength)) {
     passLength = prompt ("Please select a number between 8 -128, my friend!");
