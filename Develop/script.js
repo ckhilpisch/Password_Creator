@@ -27,30 +27,30 @@ function generatePassword(){
 // while (upperCaseInput !== true && lowerCaseInput !== true && numbersInput !== true && specCharInput !== true ) 
   upperCaseInput = confirm("Do you wish to use uppercase characters?")
   if (upperCaseInput==true){
-    alert("alright, alright, alright")
+    alert("Alright, Alright, Alright!")
     passCombo += upperCase;
-  }
+  } else {alert("No uppercase letters for you!")}
 
   lowerCaseInput = confirm("Do you wish to use lowercase characters?")
   if (lowerCaseInput==true){
-    alert("tight, tight, tight")
+    alert("Tight, Tight, Tight!")
     passCombo += lowerCase;  
-  }
+  } else {alert("No special lowercase letters for you!")}
 
   numbersInput = confirm("Do you wish to use numerical characters?")
   if (numbersInput==true){
-    alert("dope,dope,dope")
+    alert("Word, Word, Word!")
     passCombo += numbers;
-  }
+  } else {alert("No numbers for you!")}
 
   specCharInput = confirm("Do you wish to use some of those special characters?")
   if (specCharInput==true){
-    alert("cool, cool, cool")
+    alert("Cool, Cool, Cool!")
     passCombo += specChar;
-  }
+  } else {alert("No special characters for you!")}
 //validation to make sure the user choses atleast one character set
   if (passCombo === "") {
-    alert("Tsk, tsk, you must chose atleast one character set!  Let's start at the beginning");
+    alert("Tsk, tsk, you must chose atleast one character set!  Please hit the Reset Password button.");
   }
   // while (upperCaseInput !== true && lowerCaseInput !== true && numbersInput !== true && specCharInput !== true ) 
   // console.log(passCombo);
