@@ -1,5 +1,7 @@
 # 3rd_Homework
-Password Generator
+*Password Generator*
+
+
 For this assignment I had to create a password generator.   The password generator had to create a password with a legnth betweem 8 and 128, and then had to generate characters based upon a user's selections.  
 To start this off I created a string for each set of variables that a user could chose from.   I then created a length generator using a while loop.   The loop would not end until the user chose a number between 8 and 128.   I used the NaN (not a number) identifier to make sure that the user chose a number.  I was able to get help from the TA on how to set this code up, since originally I would ask a number and the code would stop.  The while loop was set up incoorctly but I was able to figure it out with his help.
 I then continued by adding four different confirm statements for each type of character set I had created.   I ask the user if they wanted uppercase, lowercase, numbers, and special characters. I added a confirmation statement at the end of each decision.   
