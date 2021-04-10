@@ -11,11 +11,11 @@
 * [Questions](#questions)
 * [License](#license)
 
-## <div align ='center'> <a name="description"> **Description** </div> 
+## <div align ='center'> <a name="description"> **Description** :</div> 
 
 Tasked with making a password creator that would, based upon user input, create a password of a specified length with specific characters of the users choice 
 
-## <div align ='center'> <a name="technologies"> **Technologies** </div> 
+## <div align ='center'> <a name="technologies"> **Technologies** :</div> 
 
 ### CSS
 ### Bootstrap
@@ -55,7 +55,7 @@ After approval, please follow the "fork-and-pull" Git workflow.
 
 If you have any questions, feel free to reach out to me.   My email is ckhilpisch@gmail.com.
 
-## <div align ='center'> <a name="license"> **License** </div> 
+## <div align ='center'> <a name="license"> **License** : </div> 
 
 MIT License
 Informataion avaiable here: 
