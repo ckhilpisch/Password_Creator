@@ -2,22 +2,21 @@
 # <div align="center"> Password Creator</div>
 
 ## <div align="center">Table of Contents:
-<ul>
-<li><a href="#description">Description</a></li>
-<li><a href="#technologies">Technologies</a></li>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#visuals">Visuals</a></li>
-<li><a href="#testing">Testing</a></li>
-<li><a href="#questions">Questions</a></li>
-<li><a href="#license">License</a></li>
-</ul>
-</div>
 
+* [Description](#description)
+* [Technologies](#technologies)
+* [Usage](#usage)
+* [Visuals](#visuals)
+* [Contributing](#contributing)
+* [Questions](#questions)
+* [License](#license)
 
-## <div align="center"> Description : </div>
+## <div align ='center'> <a name="description"> **Description** </div> 
+
 Tasked with making a password creator that would, based upon user input, create a password of a specified length with specific characters of the users choice 
 
-## <div align="center"> Technologies :</div>
+## <div align ='center'> <a name="technologies"> **Technologies** </div> 
+
 ### CSS
 ### Bootstrap
 ### Javascript
@@ -25,22 +24,22 @@ Tasked with making a password creator that would, based upon user input, create 
 
 
 
-## <div align="center">  Usage :</div>
+## <div align="center"><a name="usage"> **Usage** :</a></div>
 This user goes to the website and is prompted with questions about the length of the password and what characters the user would like to use (numerical, letters, and special characters).  Based upon the user's answers, a user specific password is created.  
 
-### The Webpage :
-https://ckhilpisch.github.io/Portfolio/
+### <div align="center"> The Webpage : </div>
+ https://ckhilpisch.github.io/Password_Creator/
 
 <br>
 <br>
 
-## <div align="center"> Visuals :</div>
-![port](./assets/port1.png) 
-![mobile view](assets/Iphone.png)
-![Mobile GIPHY](assets/mobile.gif)
+## <div align="center"><a name="visuals"> **Visuals** :</a></div>
+![length](Length.png) 
+![Characters](CharPass.png)
+![Password](PassWord.png)
 
 
-## <div align="center"> Contributing :</div>
+## <div align="center"><a name="contributing"> **Contributing** :</a></div>
 
 Pull requests are always welcome.  When contributing to this repository, please first discuss the change you wish to make via email or issue.  
 After approval, please follow the "fork-and-pull" Git workflow.
@@ -52,11 +51,11 @@ After approval, please follow the "fork-and-pull" Git workflow.
 <li>Submit a Pull request so that we can review your changes</li>
 </ol>
 
-## <div align="center"> Questions : </div>
+## <div align="center"><a name="questions"> **Questions** :</a></div>
 
 If you have any questions, feel free to reach out to me.   My email is ckhilpisch@gmail.com.
 
-## <div align="center"> License : </div>
+## <div align ='center'> <a name="license"> **License** </div> 
 
 MIT License
 Informataion avaiable here: 
